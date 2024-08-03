@@ -36,21 +36,21 @@ PKG_RELEASE:=1
 include $(INCLUDE_DIR)/package.mk
 
 define Package/luci-lua-runtime
-  SECTION:=luci
-  CATEGORY:=LuCI
-  TITLE:=Empty LuCI Lua Runtime Package
+	SECTION:=luci
+	CATEGORY:=LuCI
+	TITLE:=Empty LuCI Lua Runtime Package
 endef
 
 define Package/luci-lua-runtime/description
-  This is an empty package for LuCI Lua Runtime.
+	This is an empty package for LuCI Lua Runtime.
 endef
 
 define Build/Compile
-  # Nothing to compile
+	# Nothing to compile
 endef
 
 define Package/luci-lua-runtime/install
-  # Nothing to install
+	# Nothing to install
 endef
 
 $(eval $(call BuildPackage,luci-lua-runtime))
