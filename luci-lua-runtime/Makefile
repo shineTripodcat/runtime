@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #
 # Copyright (C) 2022 Jo-Philipp Wich <jo@mein.io>
 #
@@ -24,34 +23,8 @@ LUCI_DEPENDS:= \
 	+liblucihttp-lua \
 	+ucode-mod-lua
 
+PKG_LICENSE:=Apache-2.0
+
 include ../../luci.mk
 
 # call BuildPackage - OpenWrt buildroot signature
-=======
-include $(TOPDIR)/rules.mk
-
-PKG_NAME:=luci-lua-runtime
-PKG_RELEASE:=1
-
-include $(INCLUDE_DIR)/package.mk
-
-define Package/luci-lua-runtime
-	SECTION:=luci
-	CATEGORY:=LuCI
-	TITLE:=Empty LuCI Lua Runtime Package
-endef
-
-define Package/luci-lua-runtime/description
-	This is an empty package for LuCI Lua Runtime.
-endef
-
-define Build/Compile
-	# Nothing to compile
-endef
-
-define Package/luci-lua-runtime/install
-	# Nothing to install
-endef
-
-$(eval $(call BuildPackage,luci-lua-runtime))
->>>>>>> d0ddee68d1aea3809760ae1108dab1ad732152f2
